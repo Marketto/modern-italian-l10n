@@ -1,0 +1,150 @@
+comment_char %
+escape_char  /
+%
+% Localizzazione Italiana per l'Italia
+% Source: Marketto
+% Contact: Marco Ricupero
+% Email: marco.ricupero@gmail.com
+% Language: it
+% Territory: IT
+% Revision: 1.0
+% Date: 2014-07-24
+% Users: general
+% Charset: ISO-8859-1
+% Distribution and use is free, also
+% for commercial purposes.
+
+LC_IDENTIFICATION
+title      "Localizzazione Italiana per l'Italia"
+source     "Marketto"
+contact    "Marco Ricupero"
+email      "marco.ricupero@gmail.com"
+tel        ""
+fax        ""
+language   "Italiano"
+territory  "Italia"
+revision   "1.0"
+date       "2014-07-24"
+%
+category  "it_IT:2000";LC_IDENTIFICATION
+category  "it_IT:2000";LC_CTYPE
+category  "it_IT:2000";LC_COLLATE
+category  "it_IT:2000";LC_TIME
+category  "it_IT:2000";LC_NUMERIC
+category  "it_IT:2000";LC_MONETARY
+category  "it_IT:2000";LC_MESSAGES
+category  "it_IT:2000";LC_PAPER
+category  "it_IT:2000";LC_NAME
+category  "it_IT:2000";LC_ADDRESS
+category  "it_IT:2000";LC_TELEPHONE
+
+END LC_IDENTIFICATION
+
+LC_COLLATE
+copy "iso14651_t1"
+END LC_COLLATE
+
+LC_CTYPE
+copy "i18n"
+
+translit_start
+include "translit_combining";""
+translit_end
+END LC_CTYPE
+
+LC_MESSAGES
+yesexpr "<U005E><U005B><U0073><U0053><U0079><U0059><U005D><U002E><U002A>"
+noexpr  "<U005E><U005B><U006E><U004E><U005D><U002E><U002A>"
+END LC_MESSAGES
+
+LC_MONETARY
+int_curr_symbol           "<U0045><U0055><U0052><U0020>"
+currency_symbol           "<U20AC>"
+mon_decimal_point         "<U002C>"
+mon_thousands_sep         "<U0027>"
+mon_grouping              3;3
+positive_sign             ""
+negative_sign             "<U002D>"
+int_frac_digits           2
+frac_digits               2
+p_cs_precedes             0
+p_sep_by_space            1
+n_cs_precedes             0
+n_sep_by_space            1
+p_sign_posn               1
+n_sign_posn               1
+END LC_MONETARY
+
+LC_NUMERIC
+decimal_point             "<U002C>"
+thousands_sep             "<U0027>"
+grouping                  3;3
+END LC_NUMERIC
+
+LC_TIME
+abday   "<U0044><U006F><U006D>";"<U004C><U0075><U006E>";/
+	"<U004D><U0061><U0072>";"<U004D><U0065><U0072>";/
+	"<U0047><U0069><U006F>";"<U0056><U0065><U006E>";/
+	"<U0053><U0061><U0062>"
+day     "<U0044><U006F><U006D><U0065><U006E><U0069><U0063><U0061>";/
+	"<U004C><U0075><U006E><U0065><U0064><U00EC>";/
+	"<U004D><U0061><U0072><U0074><U0065><U0064><U00EC>";/
+	"<U004D><U0065><U0072><U0063><U006F><U006C><U0065><U0064><U00EC>";/
+	"<U0047><U0069><U006F><U0076><U0065><U0064><U00EC>";/
+	"<U0056><U0065><U006E><U0065><U0072><U0064><U00EC>";/
+	"<U0053><U0061><U0062><U0061><U0074><U006F>"
+abmon   "<U0047><U0065><U006E>";"<U0046><U0065><U0062>";/
+	"<U004D><U0061><U0072>";"<U0041><U0070><U0072>";/
+	"<U004D><U0061><U0067>";"<U0047><U0069><U0075>";/
+	"<U004C><U0075><U0067>";"<U0041><U0067><U006F>";/
+	"<U0053><U0065><U0074>";"<U004F><U0074><U0074>";/
+	"<U004E><U006F><U0076>";"<U0044><U0069><U0063>"
+mon     "<U0047><U0065><U006E><U006E><U0061><U0069><U006F>";/
+	"<U0046><U0065><U0062><U0062><U0072><U0061><U0069><U006F>";/
+	"<U004D><U0061><U0072><U007A><U006F>";/
+	"<U0041><U0070><U0072><U0069><U006C><U0065>";/
+	"<U004D><U0061><U0067><U0067><U0069><U006F>";/
+	"<U0047><U0069><U0075><U0067><U006E><U006F>";/
+	"<U004C><U0075><U0067><U006C><U0069><U006F>";/
+	"<U0041><U0067><U006F><U0073><U0074><U006F>";/
+	"<U0053><U0065><U0074><U0074><U0065><U006D><U0062><U0072><U0065>";/
+	"<U004F><U0074><U0074><U006F><U0062><U0072><U0065>";/
+	"<U004E><U006F><U0076><U0065><U006D><U0062><U0072><U0065>";/
+	"<U0044><U0069><U0063><U0065><U006D><U0062><U0072><U0065>"
+d_t_fmt "<U0025><U0061><U0020><U0025><U0064><U0020><U0025><U0062><U0020><U0025><U0059><U0020><U0025><U0054><U0020><U0025><U005A>"
+d_fmt   "<U0025><U0064><U002F><U0025><U006D><U002F><U0025><U0059>"
+t_fmt   "<U0025><U0054>"
+am_pm   "";""
+t_fmt_ampm ""
+date_fmt       "<U0025><U0061><U0020><U0025><U0065><U0020><U0025><U0062><U0020><U0025><U0059><U0020><U002D><U0020><U0025><U0048><U003A><U0025><U004D><U003A><U0025><U0053><U0020><U0025><U005A>"
+%  FIXME: found in CLDR
+first_weekday 2
+END LC_TIME
+
+LC_PAPER
+height   297
+width    210
+END LC_PAPER
+
+LC_TELEPHONE
+tel_int_fmt    "<U002B><U0025><U0063><U0020><U0025><U0061><U0020><U0025>/
+<U006C>"
+int_select	"<U0030><U0030>"
+int_prefix     "<U0033><U0039>"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+% FIXME
+measurement    1
+END LC_MEASUREMENT
+
+LC_NAME
+name_fmt    "<U0025><U0064><U0025><U0074><U0025><U0067><U0025><U0074><U0025><U0066>"
+END LC_NAME
+
+LC_ADDRESS
+postal_fmt    "<U0025><U0066><U0025><U004E><U0025><U0061><U0025><U004E><U0049><U004E><U0054><U0020><U0025><U0072><U0020><U0050><U0049><U0041><U004E><U004F><U0020><U0025><U0065><U0020><U0053><U0043><U0041><U004C><U0041><U0020><U0025><U0062><U0025><U004E><U0025><U0063>"
+country_ab2 "<U0049><U0054>"
+country_ab3 "<U0049><U0054><U0041>"
+country_num 380
+END LC_ADDRESS
